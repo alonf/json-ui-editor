@@ -1,0 +1,328 @@
+/* FormCanvas Component Styles */
+
+.form-canvas {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #fafafa;
+  border: 1px solid #e1e5e9;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.form-canvas--empty {
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+
+/* Header */
+.form-canvas__header {
+  padding: 16px 20px;
+  background: #ffffff;
+  border-bottom: 1px solid #e1e5e9;
+}
+
+.form-canvas__title {
+  margin: 0 0 4px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.form-canvas__subtitle {
+  margin: 0;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* Empty State */
+.form-canvas__empty-state {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.form-canvas__empty-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+  opacity: 0.5;
+}
+
+.form-canvas__empty-title {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.form-canvas__empty-description {
+  margin: 0;
+  font-size: 14px;
+  color: #6b7280;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Controls Container */
+.form-canvas__controls {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  min-height: 200px;
+}
+
+.form-canvas__controls--dragging {
+  background: #f3f4f6;
+}
+
+/* Draggable Items */
+.form-canvas__draggable {
+  margin-bottom: 12px;
+}
+
+.form-canvas__draggable:last-child {
+  margin-bottom: 0;
+}
+
+.form-canvas__draggable--dragging {
+  transform: rotate(2deg);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Control Items */
+.form-canvas__control-item {
+  background: #ffffff;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.form-canvas__control-item:hover {
+  border-color: #d1d5db;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-canvas__control-item:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.form-canvas__control-item--selected {
+  border-color: #3b82f6;
+  background: #eff6ff;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Control Header */
+.form-canvas__control-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.form-canvas__control-icon {
+  font-size: 20px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.form-canvas__control-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.form-canvas__control-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 2px;
+  word-break: break-word;
+}
+
+.form-canvas__control-type {
+  font-size: 12px;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.form-canvas__required {
+  color: #ef4444;
+  font-weight: bold;
+}
+
+/* Remove Button */
+.form-canvas__control-remove {
+  background: none;
+  border: none;
+  color: #9ca3af;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-canvas__control-remove:hover {
+  background: #fee2e2;
+  color: #ef4444;
+}
+
+.form-canvas__control-remove:focus {
+  outline: none;
+  background: #fee2e2;
+  color: #ef4444;
+  box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.2);
+}
+
+/* Control Details */
+.form-canvas__control-name,
+.form-canvas__control-placeholder {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #6b7280;
+  padding: 4px 8px;
+  background: #f9fafb;
+  border-radius: 4px;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+}
+
+.form-canvas__control-validation {
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.form-canvas__control-validation span {
+  font-size: 11px;
+  color: #059669;
+  background: #ecfdf5;
+  padding: 2px 6px;
+  border-radius: 12px;
+  border: 1px solid #a7f3d0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-canvas__header {
+    padding: 12px 16px;
+  }
+  
+  .form-canvas__controls {
+    padding: 12px;
+  }
+  
+  .form-canvas__control-item {
+    padding: 12px;
+  }
+  
+  .form-canvas__control-header {
+    gap: 8px;
+  }
+  
+  .form-canvas__control-icon {
+    font-size: 18px;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .form-canvas {
+    background: #1f2937;
+    border-color: #374151;
+  }
+  
+  .form-canvas__header {
+    background: #111827;
+    border-color: #374151;
+  }
+  
+  .form-canvas__title {
+    color: #f9fafb;
+  }
+  
+  .form-canvas__subtitle {
+    color: #9ca3af;
+  }
+  
+  .form-canvas__empty-title {
+    color: #f3f4f6;
+  }
+  
+  .form-canvas__empty-description {
+    color: #9ca3af;
+  }
+  
+  .form-canvas__controls--dragging {
+    background: #374151;
+  }
+  
+  .form-canvas__control-item {
+    background: #111827;
+    border-color: #4b5563;
+  }
+  
+  .form-canvas__control-item:hover {
+    border-color: #6b7280;
+  }
+  
+  .form-canvas__control-item--selected {
+    background: #1e3a8a;
+    border-color: #3b82f6;
+  }
+  
+  .form-canvas__control-label {
+    color: #f3f4f6;
+  }
+  
+  .form-canvas__control-type {
+    color: #9ca3af;
+  }
+  
+  .form-canvas__control-name,
+  .form-canvas__control-placeholder {
+    background: #374151;
+    color: #d1d5db;
+  }
+  
+  .form-canvas__control-validation span {
+    background: #064e3b;
+    color: #6ee7b7;
+    border-color: #047857;
+  }
+}
+
+/* Accessibility Improvements */
+.form-canvas__control-item:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+.form-canvas__control-remove:focus-visible {
+  outline: 2px solid #ef4444;
+  outline-offset: 2px;
+}
+
+/* Animation for drag and drop */
+.form-canvas__draggable {
+  transition: transform 0.2s ease;
+}
+
+.form-canvas__controls {
+  transition: background-color 0.2s ease;
+}

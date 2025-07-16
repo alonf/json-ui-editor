@@ -69,7 +69,20 @@
   - Write unit tests for state management logic
   - _Requirements: 3.4, 5.5_
 
-- [-] 5. Create visual editor components
+- [ ] 5. Create visual editor compqonents
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -78,6 +91,9 @@
 
 
 - [ ] 5.1 Implement ControlPalette component
+
+- [x] 5.1 Implement ControlPalette component
+
 
 
 
@@ -90,7 +106,17 @@
   - Style the palette with proper visual indicators
   - _Requirements: 3.2_
 
-- [ ] 5.2 Implement FormCanvas component
+- [x] 5.2 Implement FormCanvas component
+
+
+
+
+
+
+
+
+
+
   - Create canvas area that displays current form structure
   - Add drag-and-drop functionality for reordering controls using react-beautiful-dnd
   - Implement control selection and highlighting
