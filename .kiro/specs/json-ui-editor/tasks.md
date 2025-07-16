@@ -69,8 +69,22 @@
   - Write unit tests for state management logic
   - _Requirements: 3.4, 5.5_
 
-- [ ] 5. Create visual editor components
+- [-] 5. Create visual editor components
+
+
+
+
+
+
+
 - [ ] 5.1 Implement ControlPalette component
+
+
+
+
+
+
+
   - Create draggable control palette with all supported control types
   - Add click handlers to add new controls to the schema
   - Style the palette with proper visual indicators
