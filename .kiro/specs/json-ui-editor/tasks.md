@@ -69,7 +69,7 @@
   - Write unit tests for state management logic
   - _Requirements: 3.4, 5.5_
 
-- [ ] 5. Create visual editor compqonents
+- [x] 5. Create visual editor compqonents
 
 
 
@@ -90,7 +90,14 @@
 
 
 
-- [ ] 5.1 Implement ControlPalette component
+
+
+
+
+
+
+- [x] 5.1 Implement ControlPalette component
+
 
 - [x] 5.1 Implement ControlPalette component
 
@@ -122,7 +129,11 @@
   - Implement control selection and highlighting
   - _Requirements: 3.5, 8.2_
 
-- [ ] 5.3 Implement PropertiesPanel component
+- [x] 5.3 Implement PropertiesPanel component
+
+
+
+
   - Create properties panel for editing selected control attributes
   - Add form inputs for all control properties (label, name, validation, etc.)
   - Implement real-time updates to schema when properties change
